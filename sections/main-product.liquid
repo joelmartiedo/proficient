@@ -196,6 +196,15 @@
                   <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
                     {{ product.description }}
                   </div>
+
+                  {%- if product.metafields.custom.shipping_note -%}
+                    {% if product.metafields.custom.shipping_note.value != blank -%}
+                      {{  product.metafields.custom.shipping_note.value  }}
+                    {%- endif -%}
+                  {%- else -%}
+                    <p>Ships in 3-5 days</p>
+                  {%- endif -%}
+
                 {%- endif -%}
               {%- when 'sku' -%}
                 <p
