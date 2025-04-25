@@ -3405,6 +3405,27 @@
       "presets": {
         "name": "Lista de pedidos rápidos"
       }
+    },
+
+    "proficient-liquid": {
+      "name": "Proficient custom feature",
+      "settings": {
+        "title": {
+          "label": "Título",
+          "default": "Título"
+        },
+        "description": {
+          "label": "Descripción",
+          "default": "Descripción"
+        },
+        "color":{
+          "label": "Color"
+        }
+      },
+      "presets": {
+        "name": "Proficient custom feature"
+      }
     }
+    
   }
 }
